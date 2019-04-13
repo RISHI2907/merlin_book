@@ -1,0 +1,73 @@
+body{
+  margin:0px;
+  padding:0px;
+  background-image:url("background.jpg");
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-size:25px;
+
+
+}
+.container{
+  position:absolute;
+  width:55%;
+  top:15%;
+  left:23%;
+  border-radius: 5px;
+   background-color: #f2f2ff;
+   padding:10px;
+  box-shadow: 0 8px 6px -6px black;
+
+
+}
+
+.row{
+  padding:10px;
+}
+input[type=text],input[type=date], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit]{
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: auto;
+}
+
+input[type=submit]:hover {
+    background-color: #ADD8E6;
+ color:black;
+}
+
+.col1{
+
+    width: 35%;
+    margin-top: 6px;
+}
+
+.col2 {
+
+    width: 65%;
+    margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

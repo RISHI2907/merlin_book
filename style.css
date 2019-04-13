@@ -1,0 +1,106 @@
+
+/* -------------  CSS Loader  ----------- */
+.active{
+    color: rgb(255, 255, 255);
+    
+}
+.bg1 {
+    /* The image used */
+    background-image: url("product_images/1.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.thankyou{
+   width:100%; height:100%;
+        background:#fff url(product_images/1.jpg) center center no-repeat;
+        background-attachment: fixed;
+        background-size:100% auto;
+
+}
+
+.row{
+  width:100%;
+
+}
+.col1{
+
+    width: 35%;
+    margin-top: 6px;
+}
+
+.col2 {
+
+    width: 30%;
+    margin-top: 6px;
+}
+.col3 {
+
+    width: 35%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.overlay{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 1;
+	opacity: 0.7;
+}
+.loader{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border:10px solid #333;
+	position: relative;
+	margin: 0 auto;
+	top:30%;
+	animation:loader 2s linear infinite;
+}
+@keyframes loader{
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+.loader:after{
+	content: "";
+    width: 35px;
+    height: 35px;
+    background: #333;
+    position: absolute;
+    border-radius: 50%;
+    top: -20px;
+    left: 55px;
+}
+.loader:before{
+	content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #333;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: -10px;
+    left: 39px;
+
+}
+
+
+/* --------- CSS Loader End Here ------------*/
